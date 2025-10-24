@@ -13,3 +13,4 @@ jobs:
       - name: Show disk usage
         run: |
           df -h
+          echo "END"
