@@ -1,0 +1,15 @@
+name: Run tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check_space:
+    name: show df
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Show disk usage
+        run: |
+          df -h
