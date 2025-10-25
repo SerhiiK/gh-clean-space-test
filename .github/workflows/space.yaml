@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Clean Disk
         run: | 
-          rm -rf /usr/lib/jvm
+          sudo rm -rf /usr/lib/jvm
           
       - name: Show disk usage
         run: |
