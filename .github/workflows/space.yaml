@@ -24,7 +24,20 @@ jobs:
           sudo rm -rf /home/runner/.rustup
           du -sh /usr/local/julia*
           sudo rm -rf /usr/local/julia*
-          
+      - name: Clean SDK 
+        run: | 
+          du -sh /usr/local/lib/android/sdk
+          sudo rm -rf /usr/local/lib/android/sdk
+          du -sh /usr/local/share/chromium
+          sudo rm -rf /usr/local/share/chromium
+          du -sh /opt/az
+          sudo rm -rf /opt/az
+          du -sh /usr/local/share/powershell
+          sudo rm -rf /usr/local/share/powershell
+          du -sh /opt/hostedtoolcache
+          sudo rm -rf /opt/hostedtoolcache
+          du -sh /opt/google
+          sudo rm -rf /opt/google
           
       - name: Show disk usage
         run: |
