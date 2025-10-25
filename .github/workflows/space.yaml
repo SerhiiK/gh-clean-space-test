@@ -6,10 +6,14 @@ on:
       - main
 
 jobs:
-  check_space:
+  clean_space:
     name: show df
     runs-on: ubuntu-24.04
     steps:
+      - name: Clean Disk
+        run: | 
+          rm -rf /usr/lib/jvm
+          
       - name: Show disk usage
         run: |
           df -h
