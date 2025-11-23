@@ -45,7 +45,8 @@ jobs:
           sudo rm -rf /opt/google
           du -sh /opt/pipx
           sudo rm -rf /opt/pipx
-          sudo ls /opt/microsoft/
+          du -sh /opt/microsoft
+          sudo rm -rf /opt/microsoft
           
       - name: Show disk usage
         run: |
