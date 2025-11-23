@@ -48,7 +48,6 @@ jobs:
           du -sh /opt/microsoft
           sudo ls /opt/microsoft/
           sudo rm -rf /opt/microsoft
-          sudo ls /usr/lib
           du -sh /usr/lib/firefox
           du -sh /usr/lib/google-cloud-sdk
           sudo rm -rf /opt/google-cloud-sdk
