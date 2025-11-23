@@ -26,8 +26,8 @@ jobs:
           sudo rm -rf /usr/local/julia*
       - name: Clean SDK 
         run: | 
-          ls /usr/local/lib/
-          ls opt/
+          sudo ls /usr/local/lib/
+          sudo ls opt/
           du -sh /usr/local/lib/android/sdk
           sudo rm -rf /usr/local/lib/android/sdk
           du -sh /usr/local/share/chromium
