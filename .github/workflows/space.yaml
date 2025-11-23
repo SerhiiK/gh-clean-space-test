@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Clean Disk
         run: | 
+          ls /usr/lib
           du -sh /usr/lib/jvm
           sudo rm -rf /usr/lib/jvm
           du -sh /usr/share/dotnet
@@ -44,6 +45,7 @@ jobs:
           sudo rm -rf /opt/google
           du -sh /opt/pipx
           sudo rm -rf /opt/pipx
+          sudo ls /opt/microsoft/
           
       - name: Show disk usage
         run: |
