@@ -42,6 +42,8 @@ jobs:
           sudo rm -rf /opt/hostedtoolcache
           du -sh /opt/google
           sudo rm -rf /opt/google
+          du -sh /opt/pipx
+          sudo rm -rf /opt/pipx
           
       - name: Show disk usage
         run: |
