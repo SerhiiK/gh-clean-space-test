@@ -50,6 +50,20 @@ jobs:
           sudo ls /opt/microsoft/
           sudo rm -rf /opt/microsoft
           sudo ls /usr/lib
+          du -sh /usr/lib/firefox
+          du -sh /usr/lib/firefox-addons
+          du -sh /usr/lib/google-cloud-sdk
+          du -sh /usr/lib/mysql
+          du -sh /usr/lib/nagios
+          du -sh /usr/lib/postgresql
+          du -sh /usr/lib/php
+          du -sh /usr/lib/ruby
+          du -sh /usr/lib/man-db
+          
+          
+
+          
+          
           
       - name: Show disk usage
         run: |
