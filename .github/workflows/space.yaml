@@ -27,10 +27,6 @@ jobs:
           sudo rm -rf /usr/local/julia*
       - name: Clean SDK 
         run: | 
-          echo "ls /usr/local/lib/"
-          sudo ls /usr/local/lib/
-          echo "ls /opt/"
-          sudo ls /opt/
           du -sh /usr/local/lib/android/sdk
           sudo rm -rf /usr/local/lib/android/sdk
           du -sh /usr/local/share/chromium
@@ -46,7 +42,8 @@ jobs:
           du -sh /opt/pipx
           sudo rm -rf /opt/pipx
           du -sh /opt/microsoft
-          sudo du -sh /opt/microsoft/
+          sudo du -sh /opt/microsoft/msedge
+          sudo du -sh /opt/microsoft/powershell
           sudo rm -rf /opt/microsoft
           du -sh /usr/lib/firefox
           du -sh /usr/lib/google-cloud-sdk
