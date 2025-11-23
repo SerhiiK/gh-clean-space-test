@@ -44,6 +44,7 @@ jobs:
           du -sh /opt/google
           sudo rm -rf /opt/google
           du -sh /opt/pipx
+           du -sh /opt/pipx_bin
           sudo rm -rf /opt/pipx
           du -sh /opt/microsoft
           sudo rm -rf /opt/microsoft
