@@ -12,47 +12,27 @@ jobs:
     steps:
       - name: Clean Disk
         run: | 
-          ls /usr/lib
-          du -sh /usr/lib/jvm
+          sudo ls /usr/lib/
           sudo rm -rf /usr/lib/jvm
-          du -sh /usr/share/dotnet
           sudo rm -rf /usr/share/dotnet
-          du -sh /usr/share/swift
           sudo rm -rf /usr/share/swift
-          du -sh /usr/local/.ghcup
           sudo rm -rf /usr/local/.ghcup
-          du -sh /home/runner/.rustup
           sudo rm -rf /home/runner/.rustup
-          du -sh /usr/local/julia*
           sudo rm -rf /usr/local/julia*
       - name: Clean SDK 
         run: | 
-          du -sh /usr/local/lib/android/sdk
           sudo rm -rf /usr/local/lib/android/sdk
-          du -sh /usr/local/share/chromium
           sudo rm -rf /usr/local/share/chromium
-          du -sh /opt/az
+          sudo rm -rf /opt/microsoft/msedge
+          sudo rm -rf /usr/lib/firefox
           sudo rm -rf /opt/az
-          du -sh /usr/local/share/powershell
-          sudo rm -rf /usr/local/share/powershell
-          du -sh /opt/hostedtoolcache
+          sudo rm -rf /usr/local/share/powershell /opt/microsoft/powershell
           sudo rm -rf /opt/hostedtoolcache
-          du -sh /opt/google
           sudo rm -rf /opt/google
-          du -sh /opt/pipx
           sudo rm -rf /opt/pipx
-          du -sh /opt/microsoft
-          sudo du -sh /opt/microsoft/msedge
-          sudo du -sh /opt/microsoft/powershell
           sudo rm -rf /opt/microsoft
-          du -sh /usr/lib/firefox
-          du -sh /usr/lib/google-cloud-sdk
           sudo rm -rf /opt/google-cloud-sdk
-          
-
-          
-          
-          
+  
       - name: Show disk usage
         run: |
           df -h
