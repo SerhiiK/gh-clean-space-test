@@ -46,7 +46,7 @@ jobs:
           du -sh /opt/pipx
           sudo rm -rf /opt/pipx
           du -sh /opt/microsoft
-          sudo ls /opt/microsoft/
+          sudo du -sh /opt/microsoft/
           sudo rm -rf /opt/microsoft
           du -sh /usr/lib/firefox
           du -sh /usr/lib/google-cloud-sdk
