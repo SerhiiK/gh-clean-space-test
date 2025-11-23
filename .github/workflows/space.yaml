@@ -49,7 +49,7 @@ jobs:
           du -sh /opt/microsoft
           sudo ls /opt/microsoft/
           sudo rm -rf /opt/microsoft
-          sudo ls /usr/lib/firefox
+          sudo ls /usr/lib
           
       - name: Show disk usage
         run: |
