@@ -27,7 +27,7 @@ jobs:
       - name: Clean SDK 
         run: | 
           sudo ls /usr/local/lib/
-          sudo ls opt/
+          sudo ls /opt/
           du -sh /usr/local/lib/android/sdk
           sudo rm -rf /usr/local/lib/android/sdk
           du -sh /usr/local/share/chromium
