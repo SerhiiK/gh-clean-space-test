@@ -47,7 +47,9 @@ jobs:
            du -sh /opt/pipx_bin
           sudo rm -rf /opt/pipx
           du -sh /opt/microsoft
+          sudo ls /opt/microsoft/
           sudo rm -rf /opt/microsoft
+          sudo ls /usr/lib/firefox
           
       - name: Show disk usage
         run: |
