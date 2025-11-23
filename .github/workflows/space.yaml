@@ -44,22 +44,14 @@ jobs:
           du -sh /opt/google
           sudo rm -rf /opt/google
           du -sh /opt/pipx
-           du -sh /opt/pipx_bin
           sudo rm -rf /opt/pipx
           du -sh /opt/microsoft
           sudo ls /opt/microsoft/
           sudo rm -rf /opt/microsoft
           sudo ls /usr/lib
           du -sh /usr/lib/firefox
-          du -sh /usr/lib/firefox-addons
           du -sh /usr/lib/google-cloud-sdk
-          du -sh /usr/lib/mysql
-          du -sh /usr/lib/nagios
-          du -sh /usr/lib/postgresql
-          du -sh /usr/lib/php
-          du -sh /usr/lib/ruby
-          du -sh /usr/lib/man-db
-          
+          sudo rm -rf /opt/google-cloud-sdk
           
 
           
