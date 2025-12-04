@@ -10,29 +10,13 @@ jobs:
     name: show df
     runs-on: ubuntu-24.04
     steps:
+      - name: Show disk usage
+        run: |
+          df -h
       - name: Clean Disk
-        run: | 
-          sudo ls /usr/lib/
-          sudo rm -rf /usr/lib/jvm
-          sudo rm -rf /usr/share/dotnet
-          sudo rm -rf /usr/share/swift
-          sudo rm -rf /usr/local/.ghcup
-          sudo rm -rf /home/runner/.rustup
-          sudo rm -rf /usr/local/julia*
-      - name: Clean SDK 
-        run: | 
-          sudo rm -rf /usr/local/lib/android/sdk
-          sudo rm -rf /usr/local/share/chromium
-          sudo rm -rf /opt/microsoft/msedge
-          sudo rm -rf /usr/lib/firefox
-          sudo rm -rf /opt/az
-          sudo rm -rf /usr/local/share/powershell /opt/microsoft/powershell
-          sudo rm -rf /opt/hostedtoolcache
-          sudo rm -rf /opt/google
-          sudo rm -rf /opt/pipx
-          sudo rm -rf /opt/microsoft
-          sudo rm -rf /opt/google-cloud-sdk
-  
+        uses: SerhiiK/gha-cleaner@v0.1
+        with:
+          remove-browsers: "true"
       - name: Show disk usage
         run: |
           df -h
