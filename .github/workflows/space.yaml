@@ -14,7 +14,7 @@ jobs:
         run: |
           df -h
       - name: Clean Disk
-        uses: SerhiiK/gha-cleaner@main
+        uses: SerhiiK/gha-cleaner@v1.0
         with:
           remove-all: "true"
       - name: Show disk usage
