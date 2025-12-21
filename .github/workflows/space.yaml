@@ -16,7 +16,7 @@ jobs:
       - name: Clean Disk
         uses: SerhiiK/gha-cleaner@v0.1
         with:
-          remove-browsers: "true"
+          remove-all: "true"
       - name: Show disk usage
         run: |
           df -h
